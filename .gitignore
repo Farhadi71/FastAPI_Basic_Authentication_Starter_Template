@@ -1,0 +1,79 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+log/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Type checking and linting
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# SQLAlchemy / Database
+# Keep models, database configuration and migrations tracked.
+# Do not commit database backups or exports.
+*.bak
+*.trn
+*.mdf
+*.ldf
+*.bacpac
+
+# Alembic
+# Keep alembic.ini and migrations/versions tracked.
+
+# Runtime files
+*.pid
+*.sock
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.orig
+*.rej
+
+API Specification.*

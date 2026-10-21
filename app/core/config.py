@@ -1,0 +1,39 @@
+'''
+app.core.config
+'''
+
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class Settings(BaseSettings):
+    # =================================
+    # Application Configuration
+    # =================================
+    APP_NAME: str = "0900_NGMY_API"
+
+
+    # =================================
+    # DataBase Configuration
+    # =================================
+    DB_HOST: str
+    DB_PORT: int = 1433
+    DB_NAME: str
+    DB_USER: str
+    DB_PASSWORD: str
+    DB_DRIVER: str
+
+    # =================================
+    # Authenticaton Configuration
+    # =================================
+    BASIC_AUTH_USERNAME: str
+    BASIC_AUTH_PASSWORD: str
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore"
+    )
+
+
+
+settings = Settings()
